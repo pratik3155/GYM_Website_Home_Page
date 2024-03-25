@@ -1,9 +1,9 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
- --maincolor : #DDDDDD;
- --span : #ccb78f;
- --footer : #242423;
+  --mainred: #f6214b;
+  --back: #f9f9ff;
+  --dark: #000000;
 }
 * {
   margin: 0;
@@ -11,12 +11,10 @@
   border: 0;
   font-size: 16px;
   box-sizing: border-box;
-  font-family:"Poppins", sans-serif;;
+  font-family: "Poppins", sans-serif;
 }
-.body{
-    background-color: var(--maincolor);
-}
-ul , li {
+ul,
+li {
   list-style-type: none;
 }
 a {
@@ -30,216 +28,204 @@ img {
 button,
 input {
   background-color: transparent;
+  border: none;
 }
-.cta-2  h1{
-    font-weight: 700;
+::selection {
+  background-color: var(--mainred);
+  color: var(--back);
 }
-.cta-2 .stat h2{
-    font-size: 40px;
-    font-weight: 300;
+.maincolor {
+  color: var(--mainred);
 }
-.social li a {
-    font-size: 12px;
+.maincolorbg {
+  background-color: var(--mainred);
 }
-.logo{
-    margin: 50px auto 0px;
-    }
-    .logo a{
-        padding: 0px 15px;
-        font-size: 50px;
-        font-weight: 600;
-        color: var(--span);
-        outline: 2px solid;
-        outline-offset: -15px;
-    }
-.about ,.class1 ,.combine ,.img4 , .img5{
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.shadow-card {
+  box-shadow: -10px 7px 50px 10px rgb(246, 33, 75, 0.3);
 }
-.about{
-    background-image: url(../Images/illustrations/bg_2.jpg);
+.nav li:hover a:hover {
+  color: var(--mainred);
 }
-.about h2 span{
-    color: var(--span);
+.nav li a {
+  color: rgb(26, 24, 24);
 }
-.about h2 , .about h2 span{
-    font-size: 25px;
+.classoimg {
+  width: 50px;
+  height: 50px;
 }
-.info div img{
-    width: 45%;
-    height: 45%;
+.font-size14 {
+  font-size: 14px;
 }
-.combine{
-    top: 500px;
+.font-size12 {
+  font-size: 12px;
+  font-weight: 500;
 }
-.img1{
-    background-image: url(../Images/illustrations/work-1.jpg);
-    top: 40px;
+.dino {
+  height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/illustrations/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.img2{
-    background-image: url(../Images/illustrations/work-2.jpg);
-    top: 200px;
+.week {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/illustrations/callto-bg.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.img3{
-    background-image: url(../Images/illustrations/work-3.jpg);
-    top: 350px;
+.trainer-1,
+.trainer-2,
+.trainer-3,
+.trainer-4 {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../Images/illustrations/t1.jpg);
+  transition: all 3s ease;
 }
-.img6{
-    background-image: url(../Images/illustrations/work-6.jpg);
-    top: 1500px;
+.trainer-2 {
+  background-image: url(../Images/illustrations/t2.jpg);
 }
-.img4{
-    background-image: url(../Images/illustrations/work-4.jpg);
+.trainer-3 {
+  background-image: url(../Images/illustrations/t3.jpg);
 }
-.img5{
-    background-image: url(../Images/illustrations/work-5.jpg);
-    top: 200px;
+.trainer-4 {
+  background-image: url(../Images/illustrations/t4.jpg);
 }
-.minus{
-    top: -20px;
+.trainer-1:hover {
+  background-image: linear-gradient(
+      rgba(246, 33, 75, 0.8),
+      rgba(246, 33, 75, 0.8)
+    ),
+    url(../Images/illustrations/t1.jpg);
 }
-.minus h2{
-    font-size: 25px;
-    font-weight: 600;
+.trainer-2:hover {
+  background-image: linear-gradient(
+      rgba(246, 33, 75, 0.8),
+      rgba(246, 33, 75, 0.8)
+    ),
+    url(../Images/illustrations/t2.jpg);
 }
-.view{
-    top: 1600px;
+.trainer-3:hover {
+  background-image: linear-gradient(
+      rgba(246, 33, 75, 0.8),
+      rgba(246, 33, 75, 0.8)
+    ),
+    url(../Images/illustrations/t3.jpg);
 }
-.footer{
-    top: 1700px;
-    background-color: #242423;
+.trainer-4:hover {
+  background-image: linear-gradient(
+      rgba(246, 33, 75, 0.8),
+      rgba(246, 33, 75, 0.8)
+    ),
+    url(../Images/illustrations/t4.jpg);
 }
-.design div{
-  width: 33.33%;
-  height: 15vh;
+.insta {
+  visibility: hidden;
 }
-.archieves ul li a , .query p{
- color: var(--span);
+.trainer-1:hover .insta,
+.trainer-2:hover .insta,
+.trainer-3:hover .insta,
+.trainer-4:hover .insta {
+  visibility: visible;
 }
-@media (min-width: 768px){
-.cta-2 h1{
-    font-size: 75px;
+.Course {
+  background-color: var(--mainred);
+  bottom: 20px;
+  left: 20px;
 }
-.cta-2 .poem{
-    width: 50%;
+.box,
+.dead {
+  height: 40vh;
+  background-image: url(../Images/illustrations/f1.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.about h2 {
-    font-size: 60px;
-    margin-left: 30px;
+.dead {
+  background-image: url(../Images/illustrations/f2.jpg);
 }
-.about h2 span {
-    font-size: 60px;
+.ultr {
+  overflow-x: scroll;
 }
-.info div img {
-    width: 70%;
-    height: 28%;
+.filimg div img {
+  filter: grayscale(100%);
 }
-.minus h2{
-    font-size: 70px;
+.filimg div img:hover {
+  filter: grayscale(0%);
 }
-.minus {
-    top: -67px;
+.calcumass div input::placeholder {
+  color: var(--back);
+  font-size: 12px;
 }
-.img5{
-    top: 0;
+.calcimass {
+  background-color: var(--back);
 }
-.combine .minus h2{
-    font-size: 50px;
+.effer {
+  transition: all 0.5s linear;
 }
-.combine .minus {
-    width: 50%;
+.effer:hover img {
+  transform: scale(1.1);
 }
-.combine .row div {
-   width: 48%;
+.breakp {
+  line-height: 50px;
+  transition: all 0.3s ease;
 }
-.img6{
-    top: 700px;
+.divani:hover .breakani {
+  background-color: var(--mainred);
+  color: var(--back);
 }
-.view{
-    top:830px
+.purchase {
+  background-color: var(--dark);
+  color: var(--back);
 }
-.view h2{
-    font-size: 60px;
+.divani:hover .breakani button {
+  background-color: var(--back);
+  color: var(--dark);
 }
-.footer{
-    top: 880px;
+.memo {
+  background-color: var(--mainred);
+  border: 1px solid transparent;
 }
-.footer section{
+.memo:hover {
+  background-color: transparent;
+  border: 1px solid;
+}
+.lasticon a {
+  background-color: var(--dark);
+}
+.lasticon a:hover,
+.emailarrow {
+  background-color: var(--mainred);
+}
+@media (min-width: 768px) {
+  .box,
+  .dead {
+    height: 70vh;
+  }
+  .trainer-1,
+  .trainer-2,
+  .trainer-3,
+  .trainer-4 {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .maintext,
+  .iconcard,
+  .calcumass,
+  .deso,
+  .trainers {
     width: 75%;
-}
-.insta h3,.ques h3,.arch h3 ,.links h3{
-    font-size: 20px;
-}
-.design{
-    width: 80%;
-}
-.arch div ul li{
-    font-size: 15px;
-}
-.archieves ul li a{
-    font-size: 15px;
-}
-.ques p{
-    font-size: 13px;
-}
-.ques{
-    margin-left: 9px;
-}
-}
-@media (min-width: 992px){
-    .cta-1 menu li{
-       font-size: 30px;
-       line-height: 1.6;
-    }
-    .cta-1 menu li:hover{
-      border-bottom: 5px solid var(--span);
-    }
-    .cta-1 menu li span{
-        color: var(--span);
-       font-size: 30px;
-       border-bottom: 5px solid var(--span);
-    }
-    .cta-1 menu li span:hover{
-       border-bottom: 0px solid var(--span);
-    }
-    .cta-1 menu{
-        padding: 60px 0px 0px 35px;
-    }
-    .cta h1{
-        font-size: 135px;
-    }
-
-    .about h2{
-        font-size: 100px;
-        margin-left: 70px;
-        margin-top: -60px;
-    }
-    .about h2 span{
-        font-size: 100px;
-    }
-    .info div img{
-        width: 30%;
-        height: 35%;
-    }
-    .minus{
-        top: -80px;
-    }
-    .minus h2{
-        font-size: 140px;
-        transition: all 0.5s linear ;
-    }
-    .minus h2:hover{
-       color: #ffffff;
-    }
-    .combine .minus h2{
-        font-size: 100px;
-    }
-    .view h2{
-        font-size: 120px;
-    }
-    .view h2:hover{
-        color: var(--span);
-    }
+  }
+  .box,
+  .dead {
+    height: 40vh;
+  }
+  .trainer-1,
+  .trainer-2,
+  .trainer-3,
+  .trainer-4 {
+    height: 100%;
+  }
 }
